@@ -7,8 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
-    // TODO : use join fetch
-    @Query("select m from Member m")
+    @Query("select m from Member m join fetch m.details as md")
     List<Member> getMembersWithAssociation();
 
 }

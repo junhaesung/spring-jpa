@@ -21,10 +21,10 @@ public class JpaApplication {
 	CommandLineRunner onStartUp(OrderService orderService,
 								MemberService memberService) {
 		return args -> {
-			orderService.setUp();
-			orderService.getOne();
-			orderService.getMulti();
-			orderService.getMultiWithOrderItems();
+//			orderService.setUp();
+//			orderService.getOne();
+//			orderService.getMulti();
+//			orderService.getMultiWithOrderItems();
 
 			memberService.setUp();
 			memberService.getAllMemberDescriptions();
